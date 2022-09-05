@@ -36,9 +36,6 @@ class Solution {
                 if(queue.isEmpty()) {
                     return res;
                 }
-                if(queue.peek() == null) {
-                    return res;
-                }
                 queue.add(null);
             } else {
                 level.add(node.val);
