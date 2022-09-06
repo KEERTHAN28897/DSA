@@ -35,12 +35,7 @@ class Solution {
         return (left || right || value);
     }
 
-    public TreeNode pruneTree(TreeNode root) {
-        
-        if(root.left == null && root.right == null && root.val == 0) {
-            return null;
-        }
-        
+    public TreeNode pruneTree(TreeNode root) {        
         boolean val = containsOne(root);
         if(val == false) {
             return null;
