@@ -15,7 +15,6 @@ class MovingAverage {
             currIndex++;
             arr.add(val);
         }
-        System.out.println(arr.get(currIndex-1));
         
         if(arr.size() > win) {
             int n = ((currIndex-1) - win);
