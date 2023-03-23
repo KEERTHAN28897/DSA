@@ -30,7 +30,6 @@ class Solution {
         while(x < m && y < n) {
             for(int i = 0; i < 3; i++) {
                 for(int j = 0; j < 3; j++) {
-                    System.out.println((i + x) + " " + (j + y));
                     int num = getValid(board[i+x][j+y]);
     
                     //System.out.print(num + ", ");
@@ -50,12 +49,10 @@ class Solution {
                     
                 }
             }
-            //System.out.println(box);
-            //System.out.println(cols);
-             System.out.println();
-            System.out.println(x);
+
+       
             x = x + 3;
-             System.out.println(x);
+
      
      
             box.clear();
