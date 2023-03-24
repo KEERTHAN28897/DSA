@@ -10,7 +10,6 @@ class Solution {
     public int binarySearch(int l, int r, int target, ArrayReader reader) {
         
         while(l <= r) {
-            System.out.println(l + " " + r);
             int mid = l + (r - l) / 2;
             int val = reader.get(mid);
             if (val == target) {
@@ -18,9 +17,7 @@ class Solution {
             }
             int left = reader.get(l);
             int right = reader.get(r);
-             System.out.println(left + " " + right);
-            
-            System.out.println();
+        
             if(right >= target) {
                 //within boundray we are
                 if(val < target) {
