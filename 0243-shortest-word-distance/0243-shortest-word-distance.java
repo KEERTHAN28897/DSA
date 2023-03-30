@@ -10,7 +10,6 @@ class Solution {
             if(word.equals(word2)) {
                 dis2 = i;
             }
-        System.out.println(dis1 + " " + dis2);
             
             int min = Math.abs(dis1 - dis2);
             if(ans > min) {
