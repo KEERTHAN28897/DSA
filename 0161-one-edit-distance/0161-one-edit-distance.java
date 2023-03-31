@@ -21,9 +21,7 @@ class Solution {
                 }
             }
         } 
-        
-        System.out.println(arr[rows-1][cols-1]);
-        
+                
         if(arr[rows-1][cols-1] != 1) {
             return false;
         }
