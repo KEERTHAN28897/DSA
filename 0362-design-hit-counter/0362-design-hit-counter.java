@@ -15,7 +15,6 @@ class HitCounter {
         int count = 0;
         while(hits.isEmpty() == false) {
             int t = hits.peek();
-            System.out.println(timestamp + " " +  t);
             if((timestamp - t) >= 300) {
                 hits.remove();
             } else {
