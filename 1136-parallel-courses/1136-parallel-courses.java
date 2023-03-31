@@ -31,7 +31,6 @@ class Solution {
         
         while(queue.isEmpty() == false) {
             int node = queue.remove();
-            System.out.println(node);
             if(node == -1) {
                 //end of semester
                 count++;
