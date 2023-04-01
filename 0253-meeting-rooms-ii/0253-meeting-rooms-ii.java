@@ -47,16 +47,13 @@ class Solution {
         while(pq.isEmpty() == false) {
             Interval interval = pq.remove();
             Room available  = room.remove();
-            //System.out.println(interval.start + " " + interval.end + " " + available.last);
             if(interval.start < available.last) {
-                System.out.println(interval.start + " " + available.last + " " + room.size());
                 count++;
                 room.add(new Room(count, interval.end));
                 room.add(available);
             } else {
                 available.last = interval.end;
                 room.add(available);
-                //System.out.println(available.last + " " + room.size());
             }
             
             
