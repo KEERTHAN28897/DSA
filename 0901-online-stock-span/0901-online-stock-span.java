@@ -33,7 +33,6 @@ class StockSpanner {
                 span.add(s);
             }
         }
-        System.out.println(s);
         return s;   
     }
 }
