@@ -29,9 +29,7 @@ class Solution {
         if(visited.containsKey(node.val)) {
             return visited.get(node.val);
         }
-        
-        System.out.print(node.val + " ");
-        
+                
         List<Node> neighbors = node.neighbors;
         ArrayList<Node> cloneNeighbors = new ArrayList<>();
         
