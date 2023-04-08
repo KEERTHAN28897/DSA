@@ -20,13 +20,11 @@ class Solution {
         int val = types[i][1];
         
         
-        int n1 = 0, n2 = 0;
+        int ans = 0;
    
-        n1 = rec(target - val, types, i, j+1, mem) % mod;
-        n2 = rec(target, types, i+1, 0, mem) % mod;
+        ans += rec(target - val, types, i, j+1, mem) % mod;
+        ans += rec(target, types, i+1, 0, mem) % mod;
 
-        
-        int ans = n1 + n2;
         mem[target][i][j] = ans % mod;
         return ans % mod;
     }
