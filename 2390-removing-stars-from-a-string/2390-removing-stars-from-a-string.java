@@ -26,7 +26,7 @@ class Solution {
         String out = ans.replace("-", "");
         
 
-        System.out.println(out);
+        //System.out.println(out);
         return out;
     }
 }
